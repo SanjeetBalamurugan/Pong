@@ -1,2 +1,3 @@
 # Pong
-A ping pong game mage in Python Pygame
+
+A ping pong game made in Python Pygame
