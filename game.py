@@ -53,14 +53,11 @@ while carryOn:
         elif event.type==pygame.KEYDOWN:
                 if event.key==pygame.K_x: #Pressing the x Key will quit the game
                      carryOn=False
-  
-  #Pause Game
-    if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-      while True:
-        event = pygame.event.wait()
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-          break
- 
+
+    #pygame.mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=4096)
+    #music = pygame.mixer.Sound("Sound/music.mp3")
+    #music.play(-1) #-1 means loops for ever, 0 means play just once)
+
     #Moving the paddles when the use uses the arrow keys (player A) or "W/S" keys (player B) 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
