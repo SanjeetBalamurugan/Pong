@@ -1,2 +1,6 @@
 # ignore compiled code
 *.pyc
+*.spec
+build\
+dist\
+output\
